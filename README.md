@@ -1,2 +1,2 @@
-# webdevelopment.github.io
+# webdevelopment
 Practice Web Design
