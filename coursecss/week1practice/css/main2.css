@@ -1,0 +1,55 @@
+body{
+    background: #e7d3218c;
+    font-size: 150%;
+    margin: 4%;
+}
+
+header{
+    background: #f3c702;
+    text-align: center;
+    padding: 15px;
+    border: solid 2px;
+    border-color: #d86609;
+}
+h1{
+    color: #FFFFFF;
+}
+
+section{
+    border-style: inset;
+    height: 350px;
+    width: 28.5%;
+    display: inline-block;
+    float: left;
+    margin: 2%;
+}
+
+.aboutme{
+    overflow: auto;
+}
+nav{
+    font-variant: small-caps;
+    font-size: 150%;
+    font-family: Arial, "Time New Roman", serif;
+}
+h2{
+    text-align: center;
+    color: #f3c702;
+    background: #00B7EA;
+}
+details{
+    font-style: italic;
+}
+summary{
+    font-style: normal;
+}
+
+footer{
+    background: #f3c702;
+    clear: both;
+    border: solid 2px;
+    border-color: #d86609;
+}
+img{
+    width: 300px;
+}
