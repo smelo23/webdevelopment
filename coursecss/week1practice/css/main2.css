@@ -1,5 +1,5 @@
 body{
-    background: #ffffff;
+    background: #e7d3218c;
     font-size: 150%;
     margin: 4%;
 }
@@ -11,6 +11,7 @@ header{
     border: solid 2px;
     border-color: #d86609;
 }
+
 h1{
     color: #FFFFFF;
 }
@@ -22,24 +23,25 @@ section{
     display: inline-block;
     float: left;
     margin: 2%;
-}
-
-.aboutme{
     overflow: auto;
-}
+}  
+
 nav{
     font-variant: small-caps;
     font-size: 150%;
     font-family: Arial, "Time New Roman", serif;
 }
+
 h2{
     text-align: center;
     color: #f3c702;
     background: #00B7EA;
 }
+
 details{
     font-style: italic;
 }
+
 summary{
     font-style: normal;
 }
@@ -49,7 +51,9 @@ footer{
     clear: both;
     border: solid 2px;
     border-color: #d86609;
+    margin
 }
+
 img{
     width: 300px;
 }
