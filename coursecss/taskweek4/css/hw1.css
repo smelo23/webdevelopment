@@ -1,0 +1,176 @@
+body{
+    margin: 1%;
+    padding: 1px 5px;
+}
+
+header{
+    background-color: #e45151;
+    background-image: url("img/flywheel.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1, h2{
+    color: #f0d0ab;
+    font-variant: small-caps;
+}
+
+h1{
+    text-align: center;
+    font-size: 300%;
+}
+
+nav{
+    text-align: center;
+}
+nav a{
+    text-decoration: none;
+    display: inline-block;
+    width: 200px;
+    margin: 1%;
+    background-color: #f1d7b1;
+    font-size: 150%;
+    text-align: center;
+    border: #422401 solid;
+    border-radius: 30%;   
+}
+
+.active{
+    background: #faa023;
+    color: #FFFFFF;
+}
+
+nav a:link{
+    color: #013199;
+}
+
+nav a:visited{
+    color: #0d6e01;
+}
+
+nav a:hover{
+    background: #0037ea;
+    color: #FFFFFF;
+}
+
+nav a:focus{
+    background: #ce3308;
+    color: #FFFFFF;
+}
+
+nav a:active{
+    border:solid 4px #000000;
+}
+
+img{
+    border: solid 3px  #000000;
+    border-radius: 15%;
+    display: block;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.left{
+    background: #0d6e01;
+	background: -moz-linear-gradient(to right, #0d6e01 10%, #e9a272 90%);
+	background: -webkit-linear-gradient(to right, #0d6e01 10%, #e9a272 90%);
+	background: -o-linear-gradient(to right, #0d6e01 10%, #e9a272 90%);
+    background: linear-gradient(to bottom right, #0d6e01 10%, #e9a272 90%);
+    display: inline-block;
+    float: left;
+    width: 20%;
+    height: 100vh;
+}
+
+.right{
+    display: inline-block;
+    float: right;
+    width: 78%;
+}
+
+nav a.active:hover{
+    color: #013199;
+}
+
+/*css for task week 4*/
+
+table {
+    font: italic;
+    font-size: medium;
+    font-weight: 200;
+    font-family: Geneva, Verdana, sans-serif;
+    line-height: 200%;
+    text-align: center;
+    border: solid #0ccfe9;
+    width: 80%;
+    margin: 2%;
+    border-radius: 25px 25px 0 0;
+    background-color: #a1d3c9;
+}
+
+tr:first-child {
+
+    background: #0d6e01;
+	background: -moz-linear-gradient(to right, #0d6e01 10%, #e9a272 90%);
+	background: -webkit-linear-gradient(to right, #0d6e01 10%, #e9a272 90%);
+	background: -o-linear-gradient(to right, #0d6e01 10%, #e9a272 90%);
+    background: linear-gradient(to right, #0d6e01 10%, #e9a272 90%);
+    color: #FFFFFF;
+    -webkit-border-radius: 25px 25px 0 0;
+	border-radius: 25px 25px 0 0;
+    height: 50px;
+    margin: 2%;
+}
+
+tr th{
+    border-bottom: 5px solid #0ccfe9;
+    transition-property: transform, background, font-size, color;
+    transition-duration: 1s,1s,1s,1s;
+    padding: 1%;
+}
+
+tr th:hover{
+    background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/holiday.png");
+    font-size: 120%;
+    color: #000000;
+}
+
+tr th:active{
+    background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/holiday.png");
+    transform: rotate(360deg);
+    font-size: 120%;
+    color: #000000;
+}
+
+tr>th:first-child{
+    -webkit-border-radius: 25px 0 0 0;
+	border-radius: 25px 0 0 0;
+}
+tr>th:last-child{
+    -webkit-border-radius: 0 25px 0 0;
+	border-radius: 0 25px 0 0;
+}
+
+tr:nth-child(n+2){
+    opacity: 0.8;
+}
+
+tr th:first-child, tr td:first-child{
+    text-align: left;
+}
+
+td{
+    background-color: #ebac64;
+    color: #422401;
+    border-radius: 2px;
+    padding: 1%;
+}
+
+tr:nth-child(n+2):hover{
+    opacity: 1;
+    text-shadow: 2px 2px #53ad67;
+}
+
