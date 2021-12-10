@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Scooby</title>
+	<link rel="shortcut icon" type="image/png" href="img/logo.png">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/final.js"></script>
+    <script src="https://kit.fontawesome.com/f06d5131be.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="menu_bar">
+			<a href="scooby.html" class="bt-menu">Menú</a>
+		</div>
+        <nav>
+            <ul>
+                <li><a href="scooby.html" class="scooby_img_a"><img src="img/name3.png" alt="Nombre Empresa" class="scooby_img"></a></li>
+				<li><a href="scooby.html">Inicio</a></li>
+                <li><a href="obtenc.html">Calcula tu crédito</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="ayuda.html">Ayuda</a></li>
+			</ul>
+        </nav>
+    </header>
+    <div class="bodycalculo">
+        <h2>Simulamos tu crédito</h2>
+        <p>A continuación colocamos a tu disposición una herramienta que te brindará información clara de todo lo que neceitas saber. 
+            Ten en cuenta que actualmente manejamos un prestamo mínimo de 500.000 COP (quinientos mil pesos colombianos) y un máximo de 
+            20'000.000 COP (veinte millones de pesos colombianos). Así mismo el plazo más amplio por el que podemos financiar tu crédito es a 48 meses. 
+        </p>
+        <div class="calcular">
+            <form name="f">
+            <label for="balloons">Ingrese el monto a calcular:</label>
+            <input id="monto" type="number" name="n" step="500000" min="500000" max="20000000" value="2000000" placeholder="1000000">
+            <span class="validity"></span><br/><br/>
+            <div>
+                <label>Seleccione el número de cuotas:</label><br/>
+                <label><input type="radio" name="cuota" value="3" checked> 3</label><br/>
+                <label><input type="radio" name="cuota" value="6"> 6</label><br/>
+                <label><input type="radio" name="cuota" value="9"> 9</label><br/>
+                <label><input type="radio" name="cuota" value="12"> 12</label><br/>
+                <label><input type="radio" name="cuota" value="24"> 24</label><br/>
+                <label><input type="radio" name="cuota" value="48"> 48</label><br/>
+            </div>
+            </form>
+        </div>
+        <div class="calcular_resul">
+            <label>Valor cuota: <input id="vcuota" value="" readonly="true"></label><br/>
+            <label>Interes: <input id="interes" value="" readonly="true"></label><br/>
+            <label>Total a pagar: <input id="tpagar" value="" readonly="true"></label><br/>
+            <input type="button" class='bot' onClick="calculoFunction()" href='#' title='calcular' value="Calcular Crédito">
+            <input type="button" class='bot' onClick="resetCalFunction()" href='#' title='borrar todo' value="Borrar">
+        </div >
+    </div>
+	<footer>
+        <div>
+            <p>Contactanos: +57 315 222 33 44 / +57 1 225 96 12</p>
+            <a href="https://twitter.com/"><i class="fab fa-2x fa-twitter-square"></i></a>
+            <a href="https://www.linkedin.com/"><i class="fab fa-2x fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/"><i class="fab fa-2x fa-instagram-square"></i></a>
+        </div>   
+        <p>Lunes a Domingo - 24 horas</p>         
+        <p><i class="fas fa-2x fa-copyright"></i>   2021 Scooby, Todos los derechos reservados</p>
+        <p></p>
+    </footer>
+</body>
+</html>

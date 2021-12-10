@@ -1,0 +1,434 @@
+* {
+	padding:0;
+	margin:0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+    background:#ced9f3;
+    overflow-x: hidden;
+	padding:0;
+	margin:0;
+	height: 100vh;
+	width: auto;
+}
+
+
+.menu_bar {
+	display:none;
+}
+
+header {
+	width: 100%;
+}
+
+header nav {
+	background:#023859;
+	z-index:1000;
+	max-width: 2000px;
+	width:100%;
+}
+
+header nav ul {
+	list-style:none;
+}
+
+header nav ul li {
+	display:inline-block;
+	position: relative;
+    margin: 0 auto;
+}
+
+header nav ul li a:hover {
+	background:#bea327;
+    color: #023859;
+}
+
+header nav ul li a{
+	color:#FFFFFF;
+	display:block;
+	text-decoration:none;
+    padding: 20px;
+}
+
+.intro{
+	float: left;
+    width: 100%;
+	background-image: url("../img/main.png");
+	position: relative;
+	overflow: hidden;
+	margin: 0px;
+	padding: 30px;
+}
+
+.intro div{
+	width: 30%;
+	margin: 5% 8%;	
+	text-align: center;
+
+}
+
+.left{
+    float: left;
+    margin: 5%;
+}
+
+.right{
+	float: left;
+    margin: 5% 8%;
+}
+
+.intro img{
+    width: 500px;
+
+}
+
+p{
+    margin: 2%;
+    font-size: 20px;
+	font-style:inherit ;
+	font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+h2{
+    color: #023859;
+    text-align: center;
+    margin: 20px;
+    font-size: 55px;
+	font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/*Beneficios*/
+
+.beneficios {
+    clear: left;
+	text-align: center;
+	background-image: url("../img/orange.jpg");
+	position: relative;
+	overflow: hidden;
+	margin: 0px;
+	padding: 2%;
+}
+
+.beneficioshijo{
+	width:100%;
+	height:100%;
+	margin: 0 5%;
+}
+
+.beneficioshijo div{
+	width: 33%;
+	text-align: center;
+	align-items: center;
+	display:inline-block;
+	float:left;
+	height: 100%;
+}
+
+.beneficios div img{
+	float: left;
+	height: 125px;
+	width: 125px;
+	margin: 4% 2%;
+}
+
+.beneficioshijo div div{
+	margin: 0%;
+	width: 50%;
+}
+
+/*Blog*/
+.container{
+	float: left;
+	background-image: url("../img/purple.jpg");
+	width: 100%;
+	padding: 80px;
+}
+
+.container ul, .container li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.container ul.slider{
+	position: relative;
+	width: 400px;
+	height: 320px;
+	margin: 0 auto;
+	border: solid #3de0fd;
+}
+
+.container ul.slider li {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+    width: inherit;
+    height: inherit;
+    transition: opacity .5s;
+    background:#FFFFFF;
+}
+
+.container ul.slider li img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.container ul.slider li:first-child {
+    opacity: 1; /*Mostramos el primer <li>*/
+}
+
+.container ul.slider li:target {
+    opacity: 1; /*Mostramos el <li> del enlace que pulsemos*/
+}
+
+.menu{
+	text-align: center;
+	padding: 20px;
+}
+
+.menu li{
+	display: inline-block;
+	text-align: center;
+	padding: 7px;
+}
+
+.menu li a{
+	display: inline-block;
+	color: white;
+	text-decoration: none;
+	background-color: #023859;
+	padding: 10px;
+	font-size: 30px;
+	border-radius: 90%;
+}
+.menu li a:hover{
+	color: #a9d0e9;
+	background-color: #c73306;
+}
+/*Datos de contacto*/
+
+.contacto{
+	float: left;
+	background-color: #e4e4bd;
+	text-align: center;
+	padding: 2%;
+}
+
+#formulario{
+	border: groove #000000;
+	border-radius: 15px;
+	margin: 1%;
+	margin-right: 20px;
+	padding: 1%;
+	width: 450px;
+	text-align: center;
+	margin: 0 auto;
+	background-image: url("../img/blue.jpg");
+	color: #FFFFFF;
+	text-align: right;
+	font-size: 20px;
+}
+
+legend{
+	text-align: center;
+	padding: 15px;
+	font-size: 25px;
+}
+input{
+	width: 200px;
+}
+
+.enviar:hover{
+	color: #020202;
+	background: #f1b168;
+}
+
+/*app*/
+
+.app{
+	padding: 20px;
+	background-color: #f7917f;
+	float: left;
+	width: 100%;
+}
+
+.left2 {
+	width: 40%;
+	float: left;
+	text-align: center;
+	margin: 0% 2%;
+
+}
+
+.left2 a{
+	background-image: -webkit-linear-gradient(top, #eb94d0, #2079b0);
+	background-image: -moz-linear-gradient(top, #ecb0d9, #2079b0);
+	background-image: -ms-linear-gradient(top, #eb94d0, #2079b0);
+	background-image: -o-linear-gradient(top, #eb94d0, #2079b0);
+	background-image: linear-gradient(to bottom, #eb94d0, #2079b0);
+	color: #ced9f3;
+	-webkit-border-radius: 28;
+	-moz-border-radius: 28;
+	border-radius: 28px;
+	border: 2px solid #0099CC;
+	box-shadow: 6px 5px 24px #666666;
+	font-family: Arial;
+	color: #fafafa;
+	font-size: 27px;
+	padding: 19px;
+	text-decoration: none;
+	margin: 5%;
+}
+
+.left2 a:hover{
+	background-image: -webkit-linear-gradient(top, #2079b0, #eb94d0);
+	background-image: -moz-linear-gradient(top, #2079b0, #eb94d0);
+	background-image: -ms-linear-gradient(top, #2079b0, #eb94d0);
+	background-image: -o-linear-gradient(top, #2079b0, #eb94d0);
+	background-image: linear-gradient(to bottom, #2079b0, #eb94d0);
+	text-decoration: none;
+	background: #fdfdfc;
+	border: 4px solid #2072ec;
+	color: #2072ec;
+}
+
+.right2 {
+	float: left;
+	width: 40%;
+	margin: 0% 10%;
+	
+}
+
+.app img{
+	width: 500px;
+	height: 300px;
+	border-radius: 25px;
+}
+
+/*Pie de página*/
+footer{
+	clear: left;
+	background-image: url("../img/blue.jpg");
+	color: #FFFFFF;
+	padding:20px;
+	margin:0;
+	text-decoration: none;
+	width: 100%;
+	display: block;
+	text-align: right;
+}
+
+footer p, footer div a{
+	margin-bottom: 0;
+	margin-top: 0;
+}
+
+.fa-instagram-square, .fa-linkedin, .fa-twitter-square{
+	margin: 0.5%;
+	color: #FFFFFF;
+}
+.fa-instagram-square{
+	margin-right: 2%;
+}
+
+/*Ayuda*/
+
+.pensive{
+		float: left;
+		width: 100%;
+		background-image: url("../img/pensive6.png");
+		background-size: cover !important;
+    	background-position: center top !important;
+    	background-repeat: no-repeat !important;
+		position: relative;
+		overflow: hidden;
+		margin: 0px;
+		padding: 30px;
+		height: 300px;
+}
+.ayuda{
+	background-image: url(../img/bluelight.jpg);
+	float: left;
+	width: 100%;
+	min-height: 500px;
+	display:flexbox;
+	margin: 0;
+	padding: 0%;
+}
+
+
+.ayuda div{
+	background-color: #eceef0;
+	color: #1f72be;
+	width: auto;
+	padding: 5px;
+	margin: 18px;
+	font-size: 18px;
+	border-radius: 25px;
+}
+
+.ayuda div:hover{
+	background-color: #1f72be;
+	color: #FFFFFF;
+}
+
+.ayuda div p{
+	font-size: 18px;
+	background-color: #FFFFFF;
+	color: #023859;
+	border-radius: 15px;
+	text-align: center;
+}
+
+/*Obtenc*/
+
+.calcular{
+	border: groove #000000;
+	border-radius: 15px;
+	margin: 3% auto;
+	padding: 10px;
+	width: 500px;
+	text-align: left;
+	background-image: url(../img/bluestrong.jpg);
+	color: #FFFFFF;
+	font-size: 25px;
+}
+
+.calcular_resul{
+	border: groove #000000;
+	border-radius: 15px;
+	margin: 1% auto;
+	padding: 10px;
+	width: 500px;
+	text-align: right;
+	background-image: url(../img/bluelight2.jpg);
+	color: #FFFFFF;
+	font-size: 25px;
+}
+
+input{
+	width: auto;
+	font-size: 20px;
+	text-align: center;
+}
+
+.bodycalculo{
+	padding: 2%;
+	background-image: url(../img/white2.jpg);
+	width: 100%;
+	float: left;
+	min-height: 715px;
+
+}
+
+.bodycalculo p{
+	font-size: 25px;
+	font-style:inherit ;
+	font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	text-align: center;
+}
