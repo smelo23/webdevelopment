@@ -1,0 +1,58 @@
+name: Continuos Integration
+on:
+  pull_request:
+    branches:
+      - main
+      - develop
+      - dev
+      - trunk
+      - stage
+      - 
+jobs: 
+  validate-html:
+    name: Validate HTML
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      
+      - name: W3C HTML Validator
+        uses: Cyb3r-Jak3/html5validator-action@v7.2.0
+        with:
+          root: .
+          css: false
+          
+  lint-css:
+    name: Lint CSS
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          
+      - name: Install Stylelint
+        run: |
+          npm install --save-dev stylelint stylelint-config-standard
+          
+      - name: Create Stylelint config
+        run: |
+          echo '{"extends": "stylelint-config-standard"}' > .stylelintrc.json
+          
+      - name: Run Stylelint
+        run: npx stylelint "**/*.css"
+        
+  check-links:
+    name: Check Broken Links
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      
+      - name: Link Checker
+        uses: lycheeverse/lychee-action@v1.10.0
+        with:
+          args: --verbose --no-progress '**/*.html'
+          fail: true
+        env:
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
